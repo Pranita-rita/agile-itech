@@ -60,7 +60,7 @@ const slider_data = [
     avatar_link:"https://agileitech.com/wp-content/uploads/2022/09/Untitled-design-2.png",
     avatar_content:"We were treated like royalty. Needless to say we are extremely satisfied with the results. Thank you for making it painless, pleasant and most of all hassle free! It fits our needs perfectly.",
     name:"Michael Bean",
-    designation:'Web Developer'
+    designation:'Web Developer',
   }
 ]
 
