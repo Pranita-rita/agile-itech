@@ -105,7 +105,7 @@ export default function AboutUs(){
 
     return(
         <>
-        <div>
+        <div className="aboutUs">
           <div className="banner_section col-md-12 mx-auto col-sm-12 mx-auto col-12 mx-auto">
            <div className="container banner_container">
             <div className="banner_content default_text_resources">

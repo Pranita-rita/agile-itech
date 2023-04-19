@@ -1,4 +1,6 @@
-import AboutUs from './About_Us/AboutUs';
+// import AboutUs from './About_Us/AboutUs';
+
+import AboutUs from "./app/pages/AboutUs/AboutUs";
 
 function App() {
   return (
