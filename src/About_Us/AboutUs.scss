@@ -114,6 +114,10 @@ text-align: center;
   width: 100%;
 }
 
+.mission_section{
+    text-align: center;
+}
+
 .mission_section h3{
     color: white;
     letter-spacing: 1%;
@@ -123,6 +127,10 @@ text-align: center;
 .mission_para_text{
     letter-spacing: 1%;
     color: white;
+}
+
+.footer_content{
+    text-align: center;
 }
 
 .mission_who_we h3{
@@ -281,6 +289,7 @@ font-weight: none;
     .testimonial_heading{
         font-size: 1.28rem;
         margin-top: 10% !important;
+        
     }
 
 }    

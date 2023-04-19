@@ -60,7 +60,7 @@ const slider_data = [
     avatar_link:"https://agileitech.com/wp-content/uploads/2022/09/Untitled-design-2.png",
     avatar_content:"We were treated like royalty. Needless to say we are extremely satisfied with the results. Thank you for making it painless, pleasant and most of all hassle free! It fits our needs perfectly.",
     name:"Michael Bean",
-    designation:'Web Developer',
+    designation:'Web Developer'
   }
 ]
 
@@ -258,7 +258,7 @@ export default function AboutUs(){
 
 
       <div className="container mt-3 col-md-9 mx-auto col-sm-10 mx-auto col-10 mx-auto">
-        <h2 className="testimonial_heading">Look at our Testimonial</h2>
+        <h2 className="testimonial_heading" style={{textAlign:'center'}}>Look at our Testimonial</h2>
 
          <Slider {...settings} className="mt-5s">
           {slider_data.map((data,index)=>
@@ -269,46 +269,11 @@ export default function AboutUs(){
      <p className="slider_para_text mt-3">
       {data.avatar_content}
      </p>
-        <h5 className="michaelBean">{data.name}</h5>
-        <h5 className="webDeveloper">{data.designation}</h5>
+        <h5 className="michaelBean" style={{textAlign:'center'}}>{data.name}</h5>
+        <h5 className="webDeveloper" style={{textAlign:'center'}}>{data.designation}</h5>
       </div>)}
 
-{/* 
-      <div className="avatar_alignment container mt-4">
-      <Stack direction="row" spacing={2} style={{justifyContent:"center"}}>
-      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-    </Stack>
-     <p className="slider_para_text mt-3">We were treated like royalty. Needless to say we are extremely
-        satisfied with the results. Thank you for making it painless,
-        pleasant and most of all hassle free! It fits our needs perfectly.
-     </p>
-        <h5 className="michaelBean">Michael Bean</h5>
-        <h5 className="webDeveloper">Web Developer</h5>
-      </div>
 
-      <div className="avatar_alignment container mt-4">
-      <Stack direction="row" spacing={2} style={{justifyContent:"center"}}>
-      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-    </Stack>
-     <p className="slider_para_text mt-3">We were treated like royalty. Needless to say we are extremely
-        satisfied with the results. Thank you for making it painless,
-        pleasant and most of all hassle free! It fits our needs perfectly.
-     </p>
-        <h5 className="michaelBean">Michael Bean</h5>
-        <h5 className="webDeveloper">Web Developer</h5>
-      </div>
-
-      <div className="avatar_alignment container mt-4">
-      <Stack direction="row" spacing={2} style={{justifyContent:"center"}}>
-      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-    </Stack>
-     <p className="slider_para_text mt-3">We were treated like royalty. Needless to say we are extremely
-        satisfied with the results. Thank you for making it painless,
-        pleasant and most of all hassle free! It fits our needs perfectly.
-     </p>
-        <h5 className="michaelBean">Michael Bean</h5>
-        <h5 className="webDeveloper">Web Developer</h5>
-      </div> */}
 
     </Slider>
       </div><br/>
