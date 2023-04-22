@@ -1,11 +1,13 @@
 // import AboutUs from './About_Us/AboutUs';
 
-import AboutUs from "./app/pages/AboutUs/AboutUs";
+// import AboutUs from "./app/pages/AboutUs/AboutUs";
 
+import Courses from "./app/pages/Courses/Courses";
 function App() {
   return (
     <div className="App">
-      <AboutUs/>
+      {/* <AboutUs/> */}
+      <Courses/>
     </div>
   );
 }

@@ -1,0 +1,22 @@
+.price_display_content{
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    right: 0;
+    background: #015abd;
+    z-index: 9;
+    padding: 18px 0px;
+    margin: 24px 29px 0 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+ 
+}
