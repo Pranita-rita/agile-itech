@@ -1,16 +1,31 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Courses.scss";
-import CoursesCard from '../../Components/Courses-Card/CoursesCard';
-import Pagination from "../../Components/Pagination/Pagination"
+import CoursesCard from '../../Components/CoursesCard/CoursesCard';
+import Pagination from "../../Components/Pagination/Pagination";
+import * as imports from "../../utils/Imports";
+import CourseDetail from '../CourseDetail/CourseDetail';
 
 const Category = [
     "Select Category","Computer Science","Designing","Development","Development",
     "Home one course", "Management", "Photography","Science","Technology"
 ]
 
+
 export default function Courses(){
+
+    const [courseDetail,setCourseDetail] = useState(false);
+
+
+const courseDetails = () =>{
+    setCourseDetail(true);
+}
     return(
         <>
+        {courseDetail
+        ?
+        <CourseDetail/>
+    :
+    
         <div>
                 
             <div className="nav_content_backimage col-lg-12 col-md-12 mx-auto col-sm-12 mx-auto col-12 mx-auto">
@@ -57,7 +72,7 @@ export default function Courses(){
                  <br/>
                 
                 <div>
-                <CoursesCard/>
+                <CoursesCard onClick={()=>courseDetails}/>
                 </div>
             </div>
 
@@ -68,6 +83,7 @@ export default function Courses(){
             </section><br/>
 
         </div>
+        }
         </>
     )
 }

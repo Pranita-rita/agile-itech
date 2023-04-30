@@ -1,15 +1,10 @@
 import React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { Grid } from '@mui/material';
-import StarRating from '../Start-Rating/StarRating';
+import StarRating from '../StartRating/StarRating';
 import "./CoursesCard.scss";
-import PriceRound from '../Price-Round/PriceRound';
-import { makeStyles } from '@material-ui/core/styles';
+import PriceRound from '../PriceRound/PriceRound';
+import * as imports from "../../utils/Imports";
+import makeStyles from '@mui/styles/makeStyles';
+
 
 const cardContents = [
     {
@@ -116,7 +111,7 @@ const cardContents = [
         },
       },
     });
-export default function CoursesCard() {
+export default function CoursesCard(props) {
   const classes = useStyles();
   return (
     <div className="container m-0 p-0">
@@ -125,11 +120,12 @@ export default function CoursesCard() {
     
     {cardContents.map((e,i)=>    
     <div className='col-lg-3 col-md-4 col-sm-4 col-12 mt-4'>
-    <Card sx={{ maxWidth:500 }} 
+    <imports.Card sx={{ maxWidth:500 }} 
+    onClick={props.onClick()}
     className={classes.card}
     // class="Courses_Card col-12"
     >  
-      <CardMedia
+      <imports.CardMedia
         className="Card_Image"
         component="img"
         alt="green iguana"
@@ -137,20 +133,20 @@ export default function CoursesCard() {
         image={e.image_link}
       />
       <PriceRound price={e.course_price}/>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div" className="Designation_content" color="text.secondary">
+      <imports.CardContent>
+        <imports.Typography gutterBottom variant="h5" component="div" className="Designation_content" color="text.secondary">
           {e.designation}
-        </Typography>
-        <Typography variant="body2" sx={{color:"#222222", fontWeight:"550"}}>
+        </imports.Typography>
+        <imports.Typography variant="body2" sx={{color:"#222222", fontWeight:"550"}}>
           {e.title}
-        </Typography>
+        </imports.Typography>
        
           <StarRating ratingVal={e.review}/>
           
         {/* **************starts rating here ***************/}
 
-      </CardContent>
-      <CardActions>
+      </imports.CardContent>
+      <imports.CardActions>
        <span className="lessons">
         <i class="fas fa-book mr-1"></i>
         {e.lessons} Lessons
@@ -168,8 +164,8 @@ export default function CoursesCard() {
         
         
        </span>
-      </CardActions>
-    </Card>
+      </imports.CardActions>
+    </imports.Card>
     </div>
     )}
     

@@ -1,0 +1,48 @@
+.Instructor_Image{
+    width: 100%;
+    height: 100%;
+}
+.Instroctor_name{
+    font-weight: bold;
+}
+
+.Instroctor_designation{
+    color: grey;
+    opacity: 0.5;
+}
+
+.Instr_subDetails{
+    font-size: 0.87rem;
+}
+
+.Instr_paratext{
+    font-size: 0.9rem;
+    color: #54595F;
+    line-height: 1.8;
+}
+
+.teachCource_cards1{
+    border-color: gray;
+}
+
+
+.img_sub_section{
+    padding: 15px 15px 0px 15px;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+}
+.sophiaHeading:hover{
+color: #015abd;
+cursor: pointer;
+}
+
+.teachCource_card:hover{
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    overflow: hidden;
+    max-width: 500px;
+    cursor:pointer;
+}

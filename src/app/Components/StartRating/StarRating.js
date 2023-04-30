@@ -1,15 +1,13 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Rating from '@mui/material/Rating';
-import StarIcon from '@mui/icons-material/Star';
-import "./StarRating.scss"
+import "./StarRating.scss";
+import * as imports from "../../utils/Imports";
 
 
 export default function TextRating(props) {
   const value = props.ratingVal;
-  console.log(value)
+  // console.log(value)
   return (
-    <Box
+    <imports.Box
       sx={{
         width: '100%',
         display: 'flex',
@@ -18,16 +16,24 @@ export default function TextRating(props) {
         mt:2
       }}
     >
-      <Rating
+      <imports.Rating
         name="text-feedback"
         value={value}
         readOnlys
         size="small"
         className={"rating"} 
         precision={0.5}
-        emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+        emptyIcon={<imports.StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
       />
-      <Box  className={"ratingValue"} color="text.secondary">({props.ratingVal})</Box>
-    </Box>
+      {props.review
+      ?
+      <></>
+      :
+      <imports.Box  className={"ratingValue"} color="text.secondary">
+          ({value})
+        </imports.Box>
+    }
+      
+    </imports.Box>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./PriceRound.scss";
 
 export default function PriceRound(props){
-    console.log(props)
+    // console.log(props)
     return(
 
         <> 

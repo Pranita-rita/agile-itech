@@ -1,20 +1,12 @@
 import React,{useState} from "react";
 import "./AboutUs.scss";
 
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import Person4OutlinedIcon from '@mui/icons-material/Person4Outlined';
-import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
-import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
-import { BsGlobeCentralSouthAsia } from "react-icons/bs";
+
 import EnrollNow from "../../Components/Enroll-Now/EnrollNow";
+
+import * as imports from "../../utils/Imports";
 
 const accordion_data=[
 {
@@ -225,24 +217,24 @@ export default function AboutUs(){
 
        <div>
     {accordion_data.map((e,i)=>
-      <Accordion className="accordion pl-2 pr-2 pt-1" style={{border:'none',boxShadow:'none',margin:'0px',backgroundColor:'#F4F5F6',borderColor:'#F4F5F6', }} 
+      <imports.Accordion className="accordion pl-2 pr-2 pt-1" style={{border:'none',boxShadow:'none',margin:'0px',backgroundColor:'#F4F5F6',borderColor:'#F4F5F6', }} 
       expanded={expanded === 'panel'+String(i)} onChange={handleChange('panel'+String(i))}>
-        <AccordionSummary
+        <imports.AccordionSummary
           expandIcon={expanded==='panel'+String(i)?<i class="fa fa-minus-circle" aria-hidden="true" style={{color:"#007CBAF8"}}></i>:<i class="fa fa-plus-circle" aria-hidden="true" style={{color:"#000"}}></i>}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
          
-          <Typography >
+          <imports.Typography >
            <div className={expanded === 'panel'+String(i)?'expanded_accordion_heading':'default_accordion_heading'}>{e.question}</div>
-            </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="accordion_paratext" style={{textAlign:'left'}}>
+            </imports.Typography>
+        </imports.AccordionSummary>
+        <imports.AccordionDetails>
+          <imports.Typography className="accordion_paratext" style={{textAlign:'left'}}>
           {e.answer}
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+          </imports.Typography>
+        </imports.AccordionDetails>
+      </imports.Accordion>
 )}
       
     </div>
@@ -258,12 +250,12 @@ export default function AboutUs(){
       <div className="container mt-3 col-md-9 mx-auto col-sm-10 mx-auto col-10 mx-auto">
         <h2 className="testimonial_heading" style={{textAlign:'center'}}>Look at our Testimonial</h2>
 
-         <Slider {...settings} className="mt-5s">
+         <imports.Slider {...settings} className="mt-5s">
           {slider_data.map((data,index)=>
       <div className="avatar_alignment container mt-4">
-      <Stack direction="row" spacing={2} style={{justifyContent:"center"}}>
-      <Avatar alt="Travis Howard" sx={{width:100,height:100}} src={data.avatar_link} />
-    </Stack>
+      <imports.Stack direction="row" spacing={2} style={{justifyContent:"center"}}>
+      <imports.Avatar alt="Travis Howard" sx={{width:100,height:100}} src={data.avatar_link} />
+    </imports.Stack>
      <p className="slider_para_text mt-3">
       {data.avatar_content}
      </p>
@@ -273,7 +265,7 @@ export default function AboutUs(){
 
 
 
-    </Slider>
+    </imports.Slider>
       </div><br/>
 
 
