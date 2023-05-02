@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Divider(){
+export default function Divider(props){
     return(
         <>
-        <div className="instructor-devider mt-3"></div>
+        <div className={props.marginLess===true?"instructor-devider mb-3":"instructor-devider mt-3"}></div>
         </>
     )
 }
