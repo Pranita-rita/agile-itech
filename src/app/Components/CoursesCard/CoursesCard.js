@@ -112,7 +112,7 @@ const cardContents = [
       },
     });
 export default function CoursesCard(props) {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <div className="container m-0 p-0">
     <div className="row">
@@ -122,7 +122,7 @@ export default function CoursesCard(props) {
     <div className='col-lg-3 col-md-4 col-sm-4 col-12 mt-4'>
     <imports.Card sx={{ maxWidth:500 }} 
     onClick={props.onClick()}
-    className={classes.card}
+    // className={classes.card}
     // class="Courses_Card col-12"
     >  
       <imports.CardMedia
@@ -160,9 +160,6 @@ export default function CoursesCard(props) {
           :
           `${e.students} Students`
           }
-
-        
-        
        </span>
       </imports.CardActions>
     </imports.Card>

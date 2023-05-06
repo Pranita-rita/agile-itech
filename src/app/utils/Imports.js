@@ -59,7 +59,7 @@ import CancelRoundedIcon from "@mui/icons-material/CancelRounded";
 import { withStyles, createStyles } from "@material-ui/core";
 import Badge from "@mui/material/Badge";
 import CheckIcon from "@mui/icons-material/Check";
-import axios from "axios";
+// import axios from "axios";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import NativeSelect from "@material-ui/core/NativeSelect";
@@ -202,7 +202,7 @@ export {
   CheckIcon,
   Select,
   MenuItem,
-  axios,
+  // axios,
   Fade,
   MuiAppBar,
   PersonIcon,
