@@ -3,7 +3,7 @@ import StarRating from '../StartRating/StarRating';
 import "./CoursesCard.scss";
 import PriceRound from '../PriceRound/PriceRound';
 import * as imports from "../../utils/Imports";
-import makeStyles from '@mui/styles/makeStyles';
+// import makeStyles from '@mui/styles/makeStyles';
 
 
 const cardContents = [
@@ -101,16 +101,16 @@ const cardContents = [
     
     ]
 
-    const useStyles = makeStyles({
-      card: {
-        transition: 'box-shadow 0.3s ease-in-out',
-        cursor:'pointer',
-        '&:hover': {
-          boxShadow: '0 16px 26px rgba(0, 0, 0, 0.5), 0 -8px 16px rgba(0, 0, 0, 0.5)',
+    // const useStyles = makeStyles({
+    //   card: {
+    //     transition: 'box-shadow 0.3s ease-in-out',
+    //     cursor:'pointer',
+    //     '&:hover': {
+    //       boxShadow: '0 16px 26px rgba(0, 0, 0, 0.5), 0 -8px 16px rgba(0, 0, 0, 0.5)',
          
-        },
-      },
-    });
+    //     },
+    //   },
+    // });
 export default function CoursesCard(props) {
   // const classes = useStyles();
   return (
